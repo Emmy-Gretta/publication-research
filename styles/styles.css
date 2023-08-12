@@ -1,10 +1,12 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    
+    box-sizing: border-box;
     margin: 0;
 }
 
@@ -509,4 +511,70 @@ width: 100%;
       width: 300px;
    }
 }
+
+@media only screen and (max-width: 768px){
+   .img{
+      width: 700px;
+   }
+   .img img{
+      width: 100%;
+      margin-right: 20px;
+      object-fit: fill;
+   }
+
+   .home-intro{
+      margin-bottom: 180px;
+   }
+
+   .publication-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+   }
+
+   .publications{
+      width: 550px;
+      margin-top: 50px;
+   }
+
+   .publications img{
+      width: 400px;
+      object-fit: fill;
+   }
+
+   .publications:nth-child(1){
+      margin-top: 100px;;
+   }
+
+   .publications:nth-child(9){
+      margin-bottom: 150px;;
+   }
+
+   .details{
+      display: flex;
+      flex-direction: row;
+      margin-top: 50px;
+   }
+
+   .details:nth-child(9){
+      margin-bottom: 150px;
+   }
+
+   .details img{
+      height: 500px;
+   }
+
+   .details .img{
+      margin-right: 20px;
+      margin-top: 50px;
+   }
+
+   .details .pub-content button{
+      margin-top: 50px;
+   }
+}
+
+
 
